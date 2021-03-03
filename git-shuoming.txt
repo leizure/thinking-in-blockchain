@@ -1,0 +1,102 @@
+本地初始化：
+git init
+
+和远端关联：
+git remote add origin https://github.com/leizure/thinking-in-blockchain.git
+
+
+查看git状态：
+git status
+
+git add README.md
+
+
+提交本地
+git commit -m"修改并规范文件名称"
+
+提交远端全部：
+git commit -a
+
+如果在远端建立好了，可以直接克隆远端的项目：（不用本地操作）
+git clone https://github.com/leizure/thinking-in-blockchain.git
+
+提交全部：
+git push --all
+
+==============================================================================
+安装Git
+
+下载位置: Git下载链接—— https://git-scm.com/downloads
+
+可以在bash中执行git命令，也可以在Jupyter Notebook中执行。
+
+
+配置用户信息
+git config --global user.name "XX"
+git config --global user.email "XX@XX"
+
+
+新建文件夹并切入
+mkdir git-learn
+cd git-learn
+
+
+创建仓库
+git init
+
+
+新建readme.txt
+echo "hello world" >>readme.txt
+
+
+查看当前状态：
+git status
+
+添加全部修改到暂存区并提交
+git add -A
+git commit -m"comment"
+
+
+添加github远程库并推送仓库
+git remote add origin https://github.com/XX/XX
+git push -u origin master
+
+
+在github上的项目clone到本地文件
+git clone https://github.com/XX/XX  ../XX
+
+
+
+安装配置
+
+命令列表：
+config(配置信息)
+init(创建仓库)
+help(帮助信息)
+status(当前状态)
+
+特殊文件：
+gitignore过滤文件(配置git无需管理的目录和文件)
+
+示范1：基本配置
+
+#设置用户名：
+git config --global user.name "XXX"
+#设置用户邮箱：
+git config --global user.email "XXX@XX"
+#初始化仓库
+git init 
+示范2：获取帮助
+
+#获取常用git命令列表：
+git help
+#查看当前状态，获取提示：
+git status
+示范3：建立.gitignore过滤配置文件
+
+#过滤掉.DS_store文件
+echo ".DS_store" >.gitignore
+#过滤掉.ipynb_checkpoints目录
+echo ".ipynb_checkpoints/" >> .gitignore
+#过滤掉所有zip文件
+echo "*.zip" >>.gitignore

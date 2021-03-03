@@ -14,8 +14,6 @@ git add README.md
 提交本地
 git commit -m"修改并规范文件名称"
 
-提交远端全部：
-git commit -a
 
 如果在远端建立好了，可以直接克隆远端的项目：（不用本地操作）
 git clone https://github.com/leizure/thinking-in-blockchain.git
